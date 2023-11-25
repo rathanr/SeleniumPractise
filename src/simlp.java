@@ -8,7 +8,7 @@ public class simlp {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Downloads\\edgedriver_win64\\\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\DELL\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
 		WebDriver driver = new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.simplilearn.com/");
