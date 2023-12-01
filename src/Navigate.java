@@ -5,7 +5,7 @@ public class Navigate {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\DELL\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+		//System.setProperty("webdriver.edge.driver", "C:\\Users\\DELL\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
 		WebDriver dr = new EdgeDriver();
 		dr.manage().window().maximize(); // This will maximize the browser
 		dr.get("https://www.google.com/");
