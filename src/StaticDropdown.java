@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Dropdown {
+public class StaticDropdown {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -12,6 +12,7 @@ public class Dropdown {
 		WebDriver d = new EdgeDriver();
 		d.manage().window().maximize();
 		d.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		//Static Dropdown
 		WebElement staticdropdown = d.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		Select drop = new Select(staticdropdown);
 		drop.selectByIndex(3);
@@ -22,5 +23,5 @@ public class Dropdown {
 		System.out.println(drop.getFirstSelectedOption().getText());
 
 	}
-
+
 }

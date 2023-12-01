@@ -13,6 +13,7 @@ public class Traverse {
 		d.findElement(By.xpath("//div/button[1]/following-sibling::button[1]")).click();  //Parent-Child Traverse & Sibling-Sibling Traverse
 		d.findElement(By.xpath("//header/div/button[1]/parent::div/parent::header")).click();  //Child-Parent Traverse
 		
+		
 
 	}
 
