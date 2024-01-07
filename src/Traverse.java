@@ -6,7 +6,7 @@ public class Traverse {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\DELL\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
 		WebDriver d = new EdgeDriver();
 		d.get("https://rahulshettyacademy.com/AutomationPractice/");
 		d.findElement(By.xpath("/html/body/header/div[1]/button[1]")).click();

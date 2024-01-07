@@ -10,7 +10,7 @@ public class SeleniumIntro {
       
 		// Invoke the Browser - Chrome Browser (Chrome Driver)
 		// C:\Users\rathanr\Documents\chromedriver_win32\\chromedriver.exe    ----- 
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\DELL\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
 		WebDriver d = new EdgeDriver();
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		d.get("https://rahulshettyacademy.com/locatorspractice/");
