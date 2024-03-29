@@ -8,7 +8,7 @@ public class StaticDropdown {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Documents\\Drivers\\edgedriver_win64\\Edge New\\msedgedriver.exe");
 		WebDriver d = new EdgeDriver();
 		d.manage().window().maximize();
 		d.get("https://rahulshettyacademy.com/dropdownsPractise/");

@@ -16,19 +16,22 @@ public class GrrekartAddMultipleProductstocart {
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		driver.manage().window().maximize();
 		//List of product need to be added inside Cart
-		String[] Vegetables = {"Brocolli - 1 Kg", "Cauliflower - 1 Kg", "Cucumber - 1 Kg", "Beetroot - 1 Kg", "Carrot - 1 Kg", "Tomato - 1 Kg", "Onion - 1 Kg", "Banana - 1 Kg"};
+		String[] Vegetables = {"Brocolli", "Cauliflower", "Cucumber", "Beetroot", "Carrot", "Tomato", "Onion", "Banana"};
 		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 		
 		for(int i=0; i<products.size(); i++)
 		{
 			int j=0;
 			//Getting the name Text of all the products
-			String names = products.get(i).getText();
+			String[] names = products.get(i).getText().split("-");
+			String FormattedName = names[0].trim();
+			System.out.println(names);
 			//converting Array to ArrayList
 			List VegetablesNeeded = Arrays.asList(Vegetables);
-			if(VegetablesNeeded.contains(names))
+			if(VegetablesNeeded.contains(FormattedName))
 			{
 				j++;
+				System.out.println(driver.findElements(By.xpath("//div[@class='products']//button")));
 				driver.findElements(By.xpath("//div[@class='products']//button")).get(i).click();
 				
 				if(j==Vegetables.length)
