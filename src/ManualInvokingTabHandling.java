@@ -8,10 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class InvokingMultipleWindow {
+public class ManualInvokingTabHandling {
 
 	public static void main(String[] args) {
 		
+		//Here we're forcefully opening a new Tab while clicking on a Element we're opening that element in a new Tab
 		System.setProperty("webdriver.edge.driver", "C:\\Users\\rathanr\\Documents\\Drivers\\edgedriver_win64_V123.0.2420.53\\msedgedriver.exe");
 		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
